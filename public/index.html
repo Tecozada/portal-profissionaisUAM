@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal de Profissionais</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Cabeçalho -->
+    <header>
+      <h1>Bem-vindo ao Portal de Profissionais</h1>
+    </header>
+
+    <!-- Formulário de Cadastro -->
+    <section>
+      <h2>Cadastrar Novo Profissional</h2>
+      <form id="cadastroForm">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" placeholder="Digite o nome do profissional" required>
+
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" placeholder="Digite o CPF do profissional" required>
+
+        <label for="especialidade">Especialidade:</label>
+        <input type="text" id="especialidade" placeholder="Digite a especialidade do profissional" required>
+
+        <button type="submit">Cadastrar</button>
+      </form>
+    </section>
+
+    <!-- Lista de Profissionais -->
+    <section>
+      <h2>Profissionais Cadastrados</h2>
+      <ul id="listaProfissionais"></ul>
+    </section>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
